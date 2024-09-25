@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Omer Chernia's Portfolio - 3rd Year Software Engineer Student</title>
+    <style>
+        @keyframes gradientAnimation {
+            0% {background-position: 0% 50%;}
+            50% {background-position: 100% 50%;}
+            100% {background-position: 0% 50%;}
+        }
+        
+        body, html {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            color: #e0e0e0;
+            background: linear-gradient(300deg, #0f0c29, #302b63, #24243e, #1f1c2c);
+            background-size: 300% 300%;
+            animation: gradientAnimation 20s ease infinite;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            padding: 20px;
+        }
+        header {
+            background: rgba(15, 52, 96, 0.7);
+            color: white;
+            padding: 30px 0;
+            text-align: center;
+            backdrop-filter: blur(10px);
+            border-bottom: 3px solid #4a9fff;
+        }
+        .header-content {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .profile-section {
+            margin-right: 30px;
+        }
+        .profile-pic {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 3px solid #4a9fff;
+            object-fit: cover;
+        }
+        .text-section h1 {
+            margin: 0;
+            padding-bottom: 10px;
+            font-size: 2.5em;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+        .contact-info {
+            margin-top: 15px;
+        }
+        .contact-info a {
+            color: #4a9fff;
+            text-decoration: none;
+            margin: 0 10px;
+            transition: color 0.3s ease, background-color 0.3s ease;
+            display: inline-block;
+            padding: 5px 10px;
+            border-radius: 5px;
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+        .contact-info a:hover {
+            color: #66b3ff;
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+        .project {
+            background: rgba(31, 40, 51, 0.7);
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            display: flex;
+            align-items: flex-start;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            backdrop-filter: blur(5px);
+        }
+        .project:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+        }
+        .project-image {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            margin-right: 20px;
+            border-radius: 5px;
+            border: 2px solid #4a9fff;
+        }
+        .project-content {
+            flex: 1;
+        }
+        .project h3 {
+            margin-top: 0;
+            color: #4a9fff;
+            font-size: 1.5em;
+        }
+        .languages {
+            margin-top: 15px;
+        }
+        .language {
+            display: inline-block;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 15px;
+            margin-right: 5px;
+            margin-bottom: 5px;
+            font-size: 0.9em;
+            transition: transform 0.2s ease;
+        }
+        .language:hover {
+            transform: scale(1.05);
+        }
+        .github-link {
+            display: inline-block;
+            margin-top: 15px;
+            text-decoration: none;
+            color: #4a9fff;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+        .github-link:hover {
+            color: #66b3ff;
+        }
+        .github-logo {
+            width: 20px;
+            height: 20px;
+            vertical-align: middle;
+            margin-right: 5px;
+            filter: invert(100%);
+        }
+        .language-java { background-color: #ac2b2b; }
+        .language-python { background-color: #4B8BBE; }
+        .language-vedo { background-color: #0f1f2c; }
+        .language-sql { background-color: #00618A; }
+        .language-clientserver { background-color: #6a40fd; }
+        .language-react { background-color: #61DAFB; }
+        .language-vercel { background-color: #000000; }
+        .language-css { background-color: #264DE4; }
+        .language-html { background-color: #E34F26; }
+        .language-radis { background-color: #DC382D; }
+        .language-cpp { background-color: #00599C; }
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="text-section">
+                    <h1>Omer Chernia</h1>
+                    <p>3rd (Final) Year Software Engineer Student</p>
+                    <div class="contact-info">
+                        <a href="mailto:omer12899@gmail.com">omer12899@gmail.com</a>
+                        <a href="https://github.com/OmerChernia" target="_blank" rel="noopener noreferrer">GitHub</a>
+                        <a href="https://www.linkedin.com/in/omer-chernia-14a573228/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <section id="projects">
+            <h2>My Projects</h2>
+            
+            <div class="project">
+                <img src="https://i.imgur.com/hmzw9cw.png" alt="Hasertia Movie Library" class="project-image">
+                <div class="project-content">
+                    <h3>Hasertia - Movie Library</h3>
+                    <p>Hasertia is a comprehensive information system designed for a network of movie theaters to improve business processes and enhance customer experience. It includes features like browsing movie listings, purchasing tickets, home viewing options, multi-entry ticket management, and customer service. The project was developed as part of the Software Engineering course, in a group of 6 people.</p>
+                    <div class="languages">
+                        <span class="language language-java">Java</span>
+                        <span class="language language-sql">SQL</span>
+                        <span class="language language-clientserver">Client-Server Architecture</span>
+                    </div>
+                    <a href="https://github.com/OmerChernia/Hasertia_Project/tree/main" class="github-link" target="_blank" rel="noopener noreferrer">
+                        <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub Logo" class="github-logo">
+                        View code on GitHub
+                    </a>
+                    <a href="https://drive.google.com/file/d/1v4RZkv6Y7ut0BWyzjoZTntHEAy3qVtpA/view?usp=sharing" class="github-link" target="_blank" rel="noopener noreferrer">
+                        View Documentation
+                    </a>
+                </div>
+            </div>
+            
+            <div class="project">
+                <img src="https://imgur.com/BVnP99o.png" alt="Optimization Method Comparison" class="project-image">
+                <div class="project-content">
+                    <h3>Optimization Method Comparison</h3>
+                    <p>This project focuses on comparing two optimization methods: Gradient Descent and Newton’s Method. Through graphical representations and step-by-step analysis, the project evaluates the performance and convergence rates of both methods. The project was developed as part of the "Introduction To Animation And Robotics" Course.</p>
+                    <div class="languages">
+                        <span class="language language-python">Python</span>
+                        <span class="language language-vedo">Vedo Library</span>
+                    </div>
+                    <a href="https://github.com/HaifaGraphicsCourses/animation-and-robotics-basics-old-OmerChernia" class="github-link" target="_blank" rel="noopener noreferrer">
+                        <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub Logo" class="github-logo">
+                        View code on GitHub
+                    </a>
+                </div>
+            </div>
+
+            <div class="project">
+                <img src="https://imgur.com/bmqO1RY.gif" alt="Optimization Method Comparison" class="project-image">
+                <div class="project-content">
+                    <h3>Optimization Method Comparison</h3>
+                    <p>This project explores the optimization of mesh structures using Gradient Descent and Newton’s Method. It involves creating and manipulating shapes, such as a hexagon, and adjusting vertices to minimize system energy. The project includes a user-interaction workflow for real-time vertex manipulation and a comparison of optimization techniques. The project was developed as part of the "Introduction To Animation And Robotics" Course.</p>
+                    <div class="languages">
+                        <span class="language language-python">Python</span>
+                        <span class="language language-vedo">Vedo Library</span>
+                    </div>
+                    <a href="https://github.com/HaifaGraphicsCourses/animation-and-robotics-deformation-OmerChernia/tree/main" class="github-link" target="_blank" rel="noopener noreferrer">
+                        <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub Logo" class="github-logo">
+                        View code on GitHub
+                    </a>
+                </div>
+            </div>
+
+            <div class="project">
+                <img src="https://imgur.com/rvvk3fv.png" alt="TaskNest" class="project-image">
+                <div class="project-content">
+                    <h3>TaskNest</h3>
+                    <p>The project is a dynamic task management application where users can create, organize, and categorize tasks within nested sections. It features drag-and-drop functionality for moving tasks and sections, along with customizable task tags, allowing for efficient task management and organization.</p>
+                    <div class="languages">
+                        <span class="language language-react">React</span>
+                        <span class="language language-vercel">Vercel</span>
+                        <span class="language language-css">CSS</span>
+                        <span class="language language-html">HTML</span>
+                        <span class="language language-radis">Radis</span>
+                    </div>
+                    <a href="https://github.com/OmerChernia/my-todo-app" class="github-link" target="_blank" rel="noopener noreferrer">
+                        <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub Logo" class="github-logo">
+                        View code on GitHub
+                    </a>
+                    <a href="https://my-todo-app-bice.vercel.app/" class="github-link" target="_blank" rel="noopener noreferrer">
+                        Go to Project
+                    </a>
+                </div>
+            </div>
+
+            <div class="project">
+                <img src="https://imgur.com/94GnkiM.gif" alt="Chess" class="project-image">
+                <div class="project-content">
+                    <h3>Chess Project WIth GUI</h3>
+                    <p>This project is a fully-functional chess game implemented in C++ with a graphical user interface (GUI). It allows users to play chess with standard rules, featuring an interactive board for move visualization and player interaction. The project focuses on game mechanics, including piece movements, checks, and checkmates, while providing a smooth user experience through the GUI.</p>
+                    <div class="languages">
+                        <span class="language language-cpp">C++</span>
+                    </div>
+                    <a href="https://github.com/OmerChernia/ChessVS" class="github-link" target="_blank" rel="noopener noreferrer">
+                        <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub Logo" class="github-logo">
+                        View code on GitHub
+                    </a>
+
+                </div>
+            </div>
+
+
+            
+        </section>
+    </div>
+</body>
+</html>
